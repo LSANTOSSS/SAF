@@ -11,19 +11,20 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 **Status:** concluída na v0.2.0 — MER Core.
 
 ## Fase 2 — Templates e checklists
-**Objetivo:** transformar o método em artefatos reutilizáveis.
+**Objetivo:** transformar o método em artefatos reutilizáveis.  
+**Status:** concluída na v0.3.1 — Templates & Checklists Completion.
 
 - [x] Template de descoberta
-- [ ] Template de caso
-- [ ] Template de especificação
+- [x] Template de caso
+- [x] Template de especificação
 - [x] Log de decisões
 - [x] Registro de gaps
 - [x] Template de requisitos
 - [x] Template de critérios de aceite
 - [x] Matriz de rastreabilidade
-- [ ] Checklist de descoberta
-- [ ] Checklist de revisão
-- [ ] Checklist de publicação
+- [x] Checklist de descoberta
+- [x] Checklist de revisão
+- [x] Checklist de publicação
 
 ## Fase 3 — Case demonstrativo
 **Objetivo:** demonstrar o MER aplicado do início ao fim.

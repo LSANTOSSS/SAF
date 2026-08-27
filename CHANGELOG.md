@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.1] — Templates & Checklists Completion
+
+- Conclusão da Fase 2 do roadmap.
+- Inclusão de template reutilizável para cases demonstrativos.
+- Inclusão de template de especificação funcional.
+- Inclusão de checklist de descoberta.
+- Inclusão de checklist de revisão.
+- Inclusão de checklist de publicação.
+- Reforço da abordagem clean-room e do gate humano antes de publicação.
+
 ## [0.3.0] — First Case Study
 
 - Primeiro case demonstrativo completo do SAF.
