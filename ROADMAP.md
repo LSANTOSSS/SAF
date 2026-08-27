@@ -18,27 +18,31 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 
 **Objetivo:** documentar o método de Engenharia de Requisitos.
 
-- [ ] Descoberta
-- [ ] Fontes e evidências
-- [ ] Análise
-- [ ] Gaps e hipóteses
-- [ ] Decisões
-- [ ] Requisitos funcionais
-- [ ] Regras de negócio
-- [ ] Requisitos não funcionais
-- [ ] Cenários e critérios de aceite
-- [ ] Validação
-- [ ] Revisão
-- [ ] Rastreabilidade
+- [x] Descoberta
+- [x] Fontes e evidências
+- [x] Análise
+- [x] Gaps e hipóteses
+- [x] Decisões
+- [x] Requisitos funcionais
+- [x] Regras de negócio
+- [x] Requisitos não funcionais
+- [x] Cenários e critérios de aceite
+- [x] Validação
+- [x] Revisão
+- [x] Rastreabilidade
 
 ## Fase 2 — Templates e checklists
 
 **Objetivo:** transformar o método em artefatos reutilizáveis.
 
-- [ ] Template de descoberta
+- [x] Template de descoberta
 - [ ] Template de caso
 - [ ] Template de especificação
-- [ ] Log de decisões
+- [x] Log de decisões
+- [x] Registro de gaps
+- [x] Template de requisitos
+- [x] Template de critérios de aceite
+- [x] Matriz de rastreabilidade
 - [ ] Checklist de descoberta
 - [ ] Checklist de revisão
 - [ ] Checklist de publicação

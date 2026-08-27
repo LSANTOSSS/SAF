@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0] — MER Core
+
+- Consolidação dos princípios públicos do Método de Engenharia de Requisitos.
+- Detalhamento do fluxo operacional do MER.
+- Introdução do modelo de evidências e classificação explícita de incerteza.
+- Definição de rastreabilidade bidirecional.
+- Definição do processo de revisão, validação e gate humano.
+- Inclusão de templates para descoberta, gaps, decisões, requisitos, critérios de aceite e matriz de rastreabilidade.
+- Reforço da IA como apoio sujeito a verificação, sem autoridade de decisão ou aprovação.
+- Manutenção da abordagem pública e clean-room do SAF.
+
 ## [0.1.0] — Foundation
 
 - Fundação do System Analysis Framework.
