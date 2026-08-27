@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0] — First Case Study
+
+- Primeiro case demonstrativo completo do SAF.
+- Aplicação do MER a um domínio fictício de reserva de salas.
+- Demonstração explícita da evolução de demanda, evidências, hipóteses e gaps até decisões e requisitos.
+- Inclusão de requisitos funcionais, regras de negócio, requisitos não funcionais e critérios de aceite.
+- Inclusão de rastreabilidade bidirecional no case.
+- Consolidação de especificação funcional final.
+- Atualização da página inicial para tornar a evolução do SAF imediatamente visível.
+- Manutenção integral da abordagem pública e clean-room.
+
 ## [0.2.0] — MER Core
 
 - Consolidação dos princípios públicos do Método de Engenharia de Requisitos.

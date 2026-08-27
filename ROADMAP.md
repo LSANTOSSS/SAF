@@ -3,36 +3,14 @@
 O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma capacidade observável ao portfólio, evitando criar arquivos vazios apenas para preencher estrutura.
 
 ## Fase 0 — Fundação
-
-**Objetivo:** estabelecer identidade, governança e fronteira pública do projeto.
-
-- [x] Definir SAF como System Analysis Framework
-- [x] Definir MER como núcleo metodológico
-- [x] Criar manifesto
-- [x] Criar política de segurança de publicação
-- [x] Criar regras para agentes de IA
-- [x] Criar apresentação inicial do MER
-- [x] Definir estratégia para casos fictícios
+**Objetivo:** estabelecer identidade, governança e fronteira pública do projeto.  
+**Status:** concluída.
 
 ## Fase 1 — MER
-
-**Objetivo:** documentar o método de Engenharia de Requisitos.
-
-- [x] Descoberta
-- [x] Fontes e evidências
-- [x] Análise
-- [x] Gaps e hipóteses
-- [x] Decisões
-- [x] Requisitos funcionais
-- [x] Regras de negócio
-- [x] Requisitos não funcionais
-- [x] Cenários e critérios de aceite
-- [x] Validação
-- [x] Revisão
-- [x] Rastreabilidade
+**Objetivo:** documentar o método de Engenharia de Requisitos.  
+**Status:** concluída na v0.2.0 — MER Core.
 
 ## Fase 2 — Templates e checklists
-
 **Objetivo:** transformar o método em artefatos reutilizáveis.
 
 - [x] Template de descoberta
@@ -48,21 +26,21 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 - [ ] Checklist de publicação
 
 ## Fase 3 — Case demonstrativo
-
 **Objetivo:** demonstrar o MER aplicado do início ao fim.
 
-- [ ] Definir domínio fictício
-- [ ] Criar briefing inicial
-- [ ] Executar descoberta
-- [ ] Registrar gaps
-- [ ] Tomar decisões
-- [ ] Produzir requisitos
-- [ ] Criar cenários
-- [ ] Produzir especificação
-- [ ] Demonstrar rastreabilidade
+- [x] Definir domínio fictício
+- [x] Criar briefing inicial
+- [x] Executar descoberta
+- [x] Registrar gaps
+- [x] Tomar decisões
+- [x] Produzir requisitos
+- [x] Criar cenários
+- [x] Produzir especificação
+- [x] Demonstrar rastreabilidade
+
+**Entrega:** [`examples/room-booking/`](examples/room-booking/) — v0.3.0.
 
 ## Fase 4 — IA aplicada à Análise de Sistemas
-
 **Objetivo:** documentar como IA pode apoiar o processo sem substituir fontes e revisão humana.
 
 - [ ] Governança de IA
@@ -73,7 +51,6 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 - [ ] Exemplos de prompts seguros e genéricos
 
 ## Fase 5 — Automação
-
 **Objetivo:** reduzir trabalho operacional de documentação.
 
 - [ ] Definir pipeline documental
