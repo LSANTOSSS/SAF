@@ -42,14 +42,15 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 **Entrega:** [`examples/room-booking/`](examples/room-booking/) — v0.3.0.
 
 ## Fase 4 — IA aplicada à Análise de Sistemas
-**Objetivo:** documentar como IA pode apoiar o processo sem substituir fontes e revisão humana.
+**Objetivo:** documentar como IA pode apoiar o processo sem substituir fontes e revisão humana.  
+**Status:** concluída na v0.4.0 — AI Applied to Systems Analysis.
 
-- [ ] Governança de IA
-- [ ] Estratégia de contexto
-- [ ] Fontes e evidências
-- [ ] Classificação de confiança
-- [ ] Revisão humana
-- [ ] Exemplos de prompts seguros e genéricos
+- [x] Governança de IA
+- [x] Estratégia de contexto
+- [x] Fontes e evidências
+- [x] Classificação de confiança
+- [x] Revisão humana
+- [x] Exemplos de prompts seguros e genéricos
 
 ## Fase 5 — Automação
 **Objetivo:** reduzir trabalho operacional de documentação.

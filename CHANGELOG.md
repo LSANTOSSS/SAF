@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.0] — AI Applied to Systems Analysis
+
+- Conclusão da Fase 4 do roadmap.
+- Governança pública para IA no MER.
+- Estratégia de contexto mínimo, autorizado e rastreável.
+- Regras de fontes e evidências.
+- Modelo de confiança.
+- Gate de revisão humana.
+- Prompts seguros e genéricos.
+
 ## [0.3.1] — Templates & Checklists Completion
 
 - Conclusão da Fase 2 do roadmap.
