@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0] — Documentation Pipeline
+
+- Definição do pipeline documental do SAF.
+- Formalização do Markdown como fonte primária controlada.
+- Definição do contrato de validações automáticas.
+- Definição da fronteira entre fonte e formatos de entrega.
+- Estabelecimento da regra de não correção silenciosa.
+- Preservação do gate humano.
+- Preparação da implementação pública executável posterior.
+- Correção da versão exibida na página inicial.
+
 ## [0.4.0] — AI Applied to Systems Analysis
 
 - Conclusão da Fase 4 do roadmap.

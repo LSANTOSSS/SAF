@@ -4,12 +4,14 @@
 
 ## Current version
 
-**v0.3.0 — First Case Study**
+**v0.5.0 — Documentation Pipeline**
 
-O SAF agora contém um núcleo metodológico público, templates reutilizáveis e um primeiro case demonstrativo completo.
+O SAF agora reúne o núcleo público do MER, templates reutilizáveis, um case demonstrativo completo, governança de IA aplicada à Análise de Sistemas e o contrato de um pipeline documental reproduzível.
 
 ### Explore
 - [`docs/01-mer/`](docs/01-mer/) — MER — Método de Engenharia de Requisitos
+- [`docs/02-ai-applied/`](docs/02-ai-applied/) — IA aplicada à Análise de Sistemas
+- [`docs/03-automation/`](docs/03-automation/) — arquitetura do pipeline documental
 - [`templates/`](templates/) — artefatos reutilizáveis
 - [`examples/room-booking/`](examples/room-booking/) — aplicação do MER de ponta a ponta
 

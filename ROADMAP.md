@@ -53,10 +53,13 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 - [x] Exemplos de prompts seguros e genéricos
 
 ## Fase 5 — Automação
-**Objetivo:** reduzir trabalho operacional de documentação.
+**Objetivo:** reduzir trabalho operacional de documentação.  
+**Status:** em andamento — arquitetura documental definida na v0.5.0 — Documentation Pipeline.
 
-- [ ] Definir pipeline documental
-- [ ] Markdown como fonte
-- [ ] Exportação para formatos de entrega
-- [ ] Validações automatizadas
+- [x] Definir pipeline documental
+- [x] Markdown como fonte
+- [x] Exportação para formatos de entrega
+- [x] Validações automatizadas
 - [ ] Exemplo público independente
+
+O último item permanece aberto para a implementação de referência planejada para a v0.6.0.
