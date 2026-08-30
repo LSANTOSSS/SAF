@@ -12,7 +12,8 @@ O **SAF** demonstra como uma demanda incompleta pode evoluir até uma especifica
 |---|---|
 | Engenharia de Requisitos | [`docs/01-mer/`](docs/01-mer/) |
 | Análise ponta a ponta | [`examples/room-booking/`](examples/room-booking/) |
-| Rastreabilidade | [`examples/room-booking/06-traceability.md`](examples/room-booking/06-traceability.md) |
+| Reutilização do método | [`examples/service-request/`](examples/service-request/) |
+| Rastreabilidade | [`examples/service-request/06-traceability.md`](examples/service-request/06-traceability.md) |
 | IA com revisão humana | [`docs/02-ai-applied/`](docs/02-ai-applied/) |
 | Automação documental | [`automation/`](automation/) |
 | Exportação Markdown → DOCX | [`automation/docx_exporter.py`](automation/docx_exporter.py) |
@@ -36,9 +37,10 @@ flowchart LR
 
 1. [`MER`](docs/01-mer/README.md)
 2. [`Case room-booking`](examples/room-booking/README.md)
-3. [`Rastreabilidade`](examples/room-booking/06-traceability.md)
-4. [`Governança de IA`](docs/02-ai-applied/README.md)
-5. [`Automação`](automation/README.md)
+3. [`Case service-request`](examples/service-request/README.md)
+4. [`Rastreabilidade do segundo case`](examples/service-request/06-traceability.md)
+5. [`Governança de IA`](docs/02-ai-applied/README.md)
+6. [`Automação`](automation/README.md)
 
 ### Quick start
 
@@ -46,9 +48,10 @@ Requer Python 3 e não utiliza dependências externas.
 
 ```bash
 python automation/saf_pipeline.py examples/room-booking
+python automation/saf_pipeline.py examples/service-request --build-dir build/service-request
 ```
 
-A execução gera os artefatos configurados pelo case. Na v0.8.0, o exemplo público produz Markdown, HTML e DOCX.
+Os dois cases utilizam o mesmo pipeline e podem gerar Markdown, HTML e DOCX.
 
 ## Princípio central
 
@@ -56,9 +59,9 @@ O MER diferencia fato, evidência, inferência, hipótese, gap, decisão e requi
 
 ## Current version
 
-**v0.8.0 — Document Export**
+**v0.9.0 — Second Case Study**
 
-Esta versão adiciona uma implementação pública e clean-room de exportação Markdown → DOCX, testes automatizados e validação em CI, mantendo Markdown como fonte controlada.
+Esta versão demonstra a reutilização do MER e do pipeline em um segundo domínio fictício, agora orientado a workflow, estados, prioridade, SLA, responsabilidade e histórico.
 
 ## Segurança de publicação
 

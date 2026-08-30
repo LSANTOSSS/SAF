@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  validate-room-booking:
+  validate-cases:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,7 +16,11 @@ jobs:
           python-version: "3.x"
       - name: Run tests
         run: python -m unittest discover -s tests -v
-      - name: Run pipeline
-        run: python automation/saf_pipeline.py examples/room-booking --build-dir build
-      - name: Verify DOCX
-        run: test -s build/room-booking.docx
+      - name: Run room-booking pipeline
+        run: python automation/saf_pipeline.py examples/room-booking --build-dir build/room-booking
+      - name: Run service-request pipeline
+        run: python automation/saf_pipeline.py examples/service-request --build-dir build/service-request
+      - name: Verify DOCX outputs
+        run: |
+          test -s build/room-booking/room-booking.docx
+          test -s build/service-request/service-request.docx

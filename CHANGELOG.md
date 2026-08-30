@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.9.0] — Second Case Study
+
+- Inclusão do segundo case demonstrativo do SAF: `service-request`.
+- Demonstração do MER em um domínio orientado a workflow e ciclo de vida.
+- Inclusão de estados, prioridades, SLA, responsabilidade, reabertura, cancelamento e histórico funcional.
+- Demonstração de rastreabilidade entre fontes, evidências, gaps, decisões, requisitos e critérios de aceite.
+- Reutilização do mesmo pipeline documental para Markdown, HTML e DOCX, sem lógica específica para o domínio.
+- Atualização do GitHub Actions para validar os dois cases públicos.
+
 ## [0.8.0] — Document Export
 
 - Inclusão de DOCX como formato derivado do pipeline documental público.
