@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.10.0] — Third Case Study
+
+- Inclusão do terceiro case demonstrativo do SAF: `purchase-request`.
+- Demonstração do MER em um domínio fictício de aprovação de solicitações de compra.
+- Inclusão de alçadas por valor, múltiplos níveis de aprovação e segregação de responsabilidade.
+- Inclusão de devolução para ajuste, rejeição justificada, expiração, cancelamento e trilha de decisão.
+- Demonstração de que hipóteses sobre alçadas passam por gaps e decisões antes de sustentar requisitos.
+- Reutilização do mesmo pipeline documental para Markdown, HTML e DOCX.
+- Atualização do GitHub Actions para validar os três cases públicos e seus DOCX.
+
 ## [0.9.0] — Second Case Study
 
 - Inclusão do segundo case demonstrativo do SAF: `service-request`.

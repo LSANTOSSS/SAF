@@ -1,0 +1,18 @@
+{
+  "name": "purchase-request",
+  "title": "Purchase Request Approval — MER Case Study",
+  "sources": [
+    "01-discovery.md",
+    "02-gaps.md",
+    "03-decisions.md",
+    "04-requirements.md",
+    "05-acceptance-criteria.md",
+    "06-traceability.md",
+    "07-final-specification.md"
+  ],
+  "outputs": [
+    "markdown",
+    "html",
+    "docx"
+  ]
+}

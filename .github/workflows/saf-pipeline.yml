@@ -20,7 +20,10 @@ jobs:
         run: python automation/saf_pipeline.py examples/room-booking --build-dir build/room-booking
       - name: Run service-request pipeline
         run: python automation/saf_pipeline.py examples/service-request --build-dir build/service-request
+      - name: Run purchase-request pipeline
+        run: python automation/saf_pipeline.py examples/purchase-request --build-dir build/purchase-request
       - name: Verify DOCX outputs
         run: |
           test -s build/room-booking/room-booking.docx
           test -s build/service-request/service-request.docx
+          test -s build/purchase-request/purchase-request.docx

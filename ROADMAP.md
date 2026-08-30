@@ -34,16 +34,24 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 - [x] Markdown preservado como fonte controlada
 
 ## Fase 8 — Reuse Validation
-**Objetivo:** demonstrar que o MER e o pipeline do SAF são reutilizáveis em domínios distintos.  
 **Status:** concluída na v0.9.0 — Second Case Study.
 
 - [x] Segundo domínio totalmente fictício e clean-room
-- [x] Descoberta, gaps e decisões explícitas
-- [x] Requisitos e critérios de aceite
 - [x] Workflow, estados, prioridade e SLA
-- [x] Rastreabilidade bidirecional
-- [x] Mesmo pipeline para os dois cases
-- [x] Markdown, HTML e DOCX
+- [x] Mesmo pipeline para dois cases
 - [x] CI validando ambos os cases
 
-**Próxima direção candidata:** consolidar o SAF para uma primeira versão pública estável.
+## Fase 9 — Third Case Study
+**Objetivo:** ampliar a prova de reutilização com um domínio de aprovação e governança.  
+**Status:** concluída na v0.10.0 — Third Case Study.
+
+- [x] Terceiro domínio totalmente fictício e clean-room
+- [x] Alçadas por valor
+- [x] Múltiplos níveis de aprovação
+- [x] Segregação de responsabilidade
+- [x] Devolução, rejeição, expiração e cancelamento
+- [x] Rastreabilidade completa
+- [x] Mesmo pipeline para os três cases
+- [x] CI validando os três cases e seus DOCX
+
+**Próxima direção candidata:** revisão transversal e consolidação do SAF para v1.0.0.
