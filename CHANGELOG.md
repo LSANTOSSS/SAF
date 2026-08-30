@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.0] — Portfolio Experience
+
+- Reorganização do README para avaliação rápida por recrutadores, lideranças e profissionais técnicos.
+- Inclusão de mapa visual do SAF em Mermaid.
+- Inclusão de jornada recomendada de avaliação e quick start.
+- Inclusão de GitHub Actions para executar o pipeline público do `room-booking`.
+- Clarificação do Modelo de Confiança como status de sustentação de saídas de IA, sem competir com a taxonomia do MER.
+- Reforço da narrativa profissional: Engenharia de Requisitos + Análise de Sistemas + IA responsável + automação.
+
 ## [0.6.0] — Automation Reference Implementation
 
 - Primeira implementação executável do pipeline documental do SAF.

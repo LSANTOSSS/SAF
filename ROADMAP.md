@@ -63,3 +63,15 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 - [x] Exemplo público independente
 
 A implementação de referência usa exclusivamente o case fictício [`examples/room-booking/`](examples/room-booking/), preservando a separação clean-room do SAF.
+
+## Fase 6 — Portfolio Experience
+**Objetivo:** tornar o valor do SAF compreensível e verificável rapidamente por quem avalia o portfólio.  
+**Status:** concluída na v0.7.0 — Portfolio Experience.
+
+- [x] README orientado à avaliação em até 60 segundos
+- [x] Diagrama visual do ecossistema SAF
+- [x] Quick start da automação
+- [x] GitHub Actions para validar o case público
+- [x] Clarificação do modelo de confiança da IA
+
+**Próxima direção candidata:** estudar uma exportação pública Markdown → DOCX criada de forma independente, sem copiar ou depender de implementações privadas ou corporativas.

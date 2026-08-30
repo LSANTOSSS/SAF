@@ -1,81 +1,69 @@
 # SAF — System Analysis Framework
 
-> Um framework pessoal e público para demonstrar como problemas de negócio podem ser transformados em requisitos claros, rastreáveis e validáveis.
+> Engenharia de Requisitos, Análise de Sistemas, IA responsável e automação documental em um framework público, rastreável e executável.
+
+## Em 60 segundos
+
+O **SAF** demonstra como uma demanda incompleta pode evoluir até uma especificação funcional revisável sem transformar suposições em requisitos. O **MER — Método de Engenharia de Requisitos** é seu núcleo metodológico.
+
+### O que este projeto demonstra
+
+| Capacidade | Evidência |
+|---|---|
+| Engenharia de Requisitos | [`docs/01-mer/`](docs/01-mer/) |
+| Análise ponta a ponta | [`examples/room-booking/`](examples/room-booking/) |
+| Rastreabilidade | [`examples/room-booking/06-traceability.md`](examples/room-booking/06-traceability.md) |
+| IA com revisão humana | [`docs/02-ai-applied/`](docs/02-ai-applied/) |
+| Automação documental | [`automation/`](automation/) |
+| Segurança de publicação | [`docs/00-governance/publication-safety.md`](docs/00-governance/publication-safety.md) |
+
+## Como o SAF se conecta
+
+```mermaid
+flowchart LR
+    A[Demanda] --> B[MER]
+    B --> C[Especificação rastreável]
+    D[IA aplicada] -. apoio com governança .-> B
+    C --> E[Pipeline documental]
+    E --> F[Validação]
+    F --> G[Artefatos derivados]
+    H[Revisão humana] --> C
+    H --> F
+```
+
+## Comece por aqui
+
+1. [`MER`](docs/01-mer/README.md)
+2. [`Case room-booking`](examples/room-booking/README.md)
+3. [`Rastreabilidade`](examples/room-booking/06-traceability.md)
+4. [`Governança de IA`](docs/02-ai-applied/README.md)
+5. [`Automação`](automation/README.md)
+
+### Quick start
+
+Requer Python 3 e não utiliza dependências externas.
+
+```bash
+python automation/saf_pipeline.py examples/room-booking
+```
+
+## Princípio central
+
+O MER diferencia fato, evidência, inferência, hipótese, gap, decisão e requisito. IA pode apoiar a análise, mas não substitui fontes, decisões ou revisão humana. A automação valida e deriva artefatos sem alterar silenciosamente o conteúdo funcional.
 
 ## Current version
 
-**v0.6.0 — Automation Reference Implementation**
+**v0.7.0 — Portfolio Experience**
 
-O SAF agora possui uma implementação pública executável do pipeline documental, aplicada ao case fictício `room-booking`, além do núcleo público do MER, templates reutilizáveis e governança de IA aplicada à Análise de Sistemas.
-
-### Explore
-- [`docs/01-mer/`](docs/01-mer/) — MER — Método de Engenharia de Requisitos
-- [`docs/02-ai-applied/`](docs/02-ai-applied/) — IA aplicada à Análise de Sistemas
-- [`docs/03-automation/`](docs/03-automation/) — contrato do pipeline documental
-- [`automation/`](automation/) — implementação pública de referência
-- [`templates/`](templates/) — artefatos reutilizáveis
-- [`examples/room-booking/`](examples/room-booking/) — aplicação do MER e exemplo do pipeline
-
-## Sobre o projeto
-
-O **SAF (System Analysis Framework)** organiza práticas de Análise de Sistemas, Engenharia de Requisitos, uso responsável de Inteligência Artificial e automação documental em um fluxo único e reutilizável.
-
-Seus objetivos são servir como portfólio público de competências e evoluir como referência prática para descoberta, análise, decisão, especificação, validação e revisão.
-
-O SAF não representa o processo interno de nenhuma empresa. Seu conteúdo público é desenvolvido de forma independente, com exemplos fictícios e materiais próprios.
-
-## Núcleo metodológico: MER
-
-O **MER — Método de Engenharia de Requisitos** é o núcleo metodológico do SAF.
-
-```text
-Demanda
-↓
-Fontes e Evidências
-↓
-Descoberta
-↓
-Análise
-↓
-Gaps
-↓
-Decisões
-↓
-Requisitos
-↓
-Cenários
-↓
-Validação
-↓
-Especificação
-↓
-Revisão
-```
-
-O método mantém explícita a diferença entre fato, evidência, inferência, hipótese, gap, decisão e requisito. **IA pode apoiar a análise, mas não substitui fontes, evidências, validação humana ou responsabilidade profissional.**
-
-## O que este repositório demonstra
-
-- descoberta e entendimento de problemas;
-- levantamento e organização de requisitos;
-- identificação de gaps e conflitos;
-- modelagem de regras de negócio;
-- critérios e cenários de aceite;
-- rastreabilidade entre decisões e requisitos;
-- documentação funcional;
-- comunicação entre negócio e tecnologia;
-- uso responsável de IA;
-- automação documental reproduzível.
+Esta versão prioriza a experiência de quem avalia o repositório: leitura rápida, arquitetura visual, execução verificável e clareza conceitual.
 
 ## Segurança de publicação
 
-Não são publicados código proprietário, documentação interna, arquitetura privada, credenciais, dados de clientes, incidentes internos, nomes de serviços privados, regras confidenciais ou artefatos copiados de ambientes corporativos.
+O SAF não representa o processo interno de nenhuma empresa. Seus exemplos são independentes e fictícios. Veja [`publication-safety.md`](docs/00-governance/publication-safety.md).
 
-Os exemplos são criados de forma independente e fictícia. Veja [`docs/00-governance/publication-safety.md`](docs/00-governance/publication-safety.md).
+## Roadmap e histórico
 
-## Roadmap
-
-Consulte [`ROADMAP.md`](ROADMAP.md) para acompanhar as próximas etapas e [`CHANGELOG.md`](CHANGELOG.md) para o histórico de versões.
+Consulte [`ROADMAP.md`](ROADMAP.md) e [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Licença
 
