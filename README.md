@@ -4,16 +4,17 @@
 
 ## Current version
 
-**v0.5.0 — Documentation Pipeline**
+**v0.6.0 — Automation Reference Implementation**
 
-O SAF agora reúne o núcleo público do MER, templates reutilizáveis, um case demonstrativo completo, governança de IA aplicada à Análise de Sistemas e o contrato de um pipeline documental reproduzível.
+O SAF agora possui uma implementação pública executável do pipeline documental, aplicada ao case fictício `room-booking`, além do núcleo público do MER, templates reutilizáveis e governança de IA aplicada à Análise de Sistemas.
 
 ### Explore
 - [`docs/01-mer/`](docs/01-mer/) — MER — Método de Engenharia de Requisitos
 - [`docs/02-ai-applied/`](docs/02-ai-applied/) — IA aplicada à Análise de Sistemas
-- [`docs/03-automation/`](docs/03-automation/) — arquitetura do pipeline documental
+- [`docs/03-automation/`](docs/03-automation/) — contrato do pipeline documental
+- [`automation/`](automation/) — implementação pública de referência
 - [`templates/`](templates/) — artefatos reutilizáveis
-- [`examples/room-booking/`](examples/room-booking/) — aplicação do MER de ponta a ponta
+- [`examples/room-booking/`](examples/room-booking/) — aplicação do MER e exemplo do pipeline
 
 ## Sobre o projeto
 
@@ -64,7 +65,7 @@ O método mantém explícita a diferença entre fato, evidência, inferência, h
 - documentação funcional;
 - comunicação entre negócio e tecnologia;
 - uso responsável de IA;
-- evolução para automação documental.
+- automação documental reproduzível.
 
 ## Segurança de publicação
 

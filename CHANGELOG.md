@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.6.0] — Automation Reference Implementation
+
+- Primeira implementação executável do pipeline documental do SAF.
+- Configuração explícita de fontes por `pipeline.json`.
+- Descoberta determinística de artefatos.
+- Validações estruturais e referenciais sem alteração de conteúdo funcional.
+- Composição de Markdown consolidado.
+- Exportação dependency-free para Markdown e HTML.
+- Aplicação pública ao case fictício `room-booking`.
+- Conclusão da Fase 5 — Automação.
+
 ## [0.5.0] — Documentation Pipeline
 
 - Definição do pipeline documental do SAF.

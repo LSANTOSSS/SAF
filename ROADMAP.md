@@ -54,12 +54,12 @@ O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma c
 
 ## Fase 5 — Automação
 **Objetivo:** reduzir trabalho operacional de documentação.  
-**Status:** em andamento — arquitetura documental definida na v0.5.0 — Documentation Pipeline.
+**Status:** concluída na v0.6.0 — Automation Reference Implementation.
 
 - [x] Definir pipeline documental
 - [x] Markdown como fonte
 - [x] Exportação para formatos de entrega
 - [x] Validações automatizadas
-- [ ] Exemplo público independente
+- [x] Exemplo público independente
 
-O último item permanece aberto para a implementação de referência planejada para a v0.6.0.
+A implementação de referência usa exclusivamente o case fictício [`examples/room-booking/`](examples/room-booking/), preservando a separação clean-room do SAF.
