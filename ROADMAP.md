@@ -3,75 +3,38 @@
 O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma capacidade observável ao portfólio, evitando criar arquivos vazios apenas para preencher estrutura.
 
 ## Fase 0 — Fundação
-**Objetivo:** estabelecer identidade, governança e fronteira pública do projeto.  
 **Status:** concluída.
 
 ## Fase 1 — MER
-**Objetivo:** documentar o método de Engenharia de Requisitos.  
 **Status:** concluída na v0.2.0 — MER Core.
 
 ## Fase 2 — Templates e checklists
-**Objetivo:** transformar o método em artefatos reutilizáveis.  
 **Status:** concluída na v0.3.1 — Templates & Checklists Completion.
 
-- [x] Template de descoberta
-- [x] Template de caso
-- [x] Template de especificação
-- [x] Log de decisões
-- [x] Registro de gaps
-- [x] Template de requisitos
-- [x] Template de critérios de aceite
-- [x] Matriz de rastreabilidade
-- [x] Checklist de descoberta
-- [x] Checklist de revisão
-- [x] Checklist de publicação
-
 ## Fase 3 — Case demonstrativo
-**Objetivo:** demonstrar o MER aplicado do início ao fim.
-
-- [x] Definir domínio fictício
-- [x] Criar briefing inicial
-- [x] Executar descoberta
-- [x] Registrar gaps
-- [x] Tomar decisões
-- [x] Produzir requisitos
-- [x] Criar cenários
-- [x] Produzir especificação
-- [x] Demonstrar rastreabilidade
-
-**Entrega:** [`examples/room-booking/`](examples/room-booking/) — v0.3.0.
+**Status:** concluída na v0.3.0 — First Case Study.  
+**Entrega:** [`examples/room-booking/`](examples/room-booking/).
 
 ## Fase 4 — IA aplicada à Análise de Sistemas
-**Objetivo:** documentar como IA pode apoiar o processo sem substituir fontes e revisão humana.  
 **Status:** concluída na v0.4.0 — AI Applied to Systems Analysis.
 
-- [x] Governança de IA
-- [x] Estratégia de contexto
-- [x] Fontes e evidências
-- [x] Classificação de confiança
-- [x] Revisão humana
-- [x] Exemplos de prompts seguros e genéricos
-
 ## Fase 5 — Automação
-**Objetivo:** reduzir trabalho operacional de documentação.  
 **Status:** concluída na v0.6.0 — Automation Reference Implementation.
 
-- [x] Definir pipeline documental
-- [x] Markdown como fonte
-- [x] Exportação para formatos de entrega
-- [x] Validações automatizadas
-- [x] Exemplo público independente
-
-A implementação de referência usa exclusivamente o case fictício [`examples/room-booking/`](examples/room-booking/), preservando a separação clean-room do SAF.
-
 ## Fase 6 — Portfolio Experience
-**Objetivo:** tornar o valor do SAF compreensível e verificável rapidamente por quem avalia o portfólio.  
 **Status:** concluída na v0.7.0 — Portfolio Experience.
 
-- [x] README orientado à avaliação em até 60 segundos
-- [x] Diagrama visual do ecossistema SAF
-- [x] Quick start da automação
-- [x] GitHub Actions para validar o case público
-- [x] Clarificação do modelo de confiança da IA
+## Fase 7 — Document Export
+**Objetivo:** demonstrar que uma fonte Markdown controlada pode gerar um documento profissional derivado sem depender de implementação privada.  
+**Status:** concluída na v0.8.0 — Document Export.
 
-**Próxima direção candidata:** estudar uma exportação pública Markdown → DOCX criada de forma independente, sem copiar ou depender de implementações privadas ou corporativas.
+- [x] DOCX como formato derivado configurável
+- [x] Exporter clean-room escrito do zero
+- [x] Python standard library + Open XML
+- [x] Títulos, parágrafos, listas, blockquotes e tabelas
+- [x] Estilos e layout básico profissional
+- [x] Testes unitários do pacote DOCX
+- [x] GitHub Actions validando testes e geração do DOCX
+- [x] Markdown preservado como fonte controlada
+
+**Próxima direção candidata:** segundo case demonstrativo para provar a reutilização do MER e do pipeline em um domínio fictício diferente.

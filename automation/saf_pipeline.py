@@ -52,8 +52,11 @@ def main() -> int:
     print("Composition: PASS")
 
     produced = export_all(Path(args.build_dir), slug, title, markdown, outputs)
-    print("Markdown export: " + ("PASS" if any(path.suffix == ".md" for path in produced) else "NOT REQUESTED"))
-    print("HTML export: " + ("PASS" if any(path.suffix == ".html" for path in produced) else "NOT REQUESTED"))
+    for extension, label in ((".md", "Markdown"), (".html", "HTML"), (".docx", "DOCX")):
+        requested = extension.lstrip(".") in outputs or (extension == ".md" and "markdown" in outputs)
+        status = "PASS" if any(path.suffix == extension for path in produced) else ("FAIL" if requested else "NOT REQUESTED")
+        print(f"{label} export: {status}")
+
     print()
     print("Result: VALID")
     return 0

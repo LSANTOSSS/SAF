@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.8.0] — Document Export
+
+- Inclusão de DOCX como formato derivado do pipeline documental público.
+- Criação de exporter DOCX clean-room usando somente Python standard library e Open XML.
+- Suporte inicial a títulos, parágrafos, listas, blockquotes, tabelas, negrito e código inline.
+- Inclusão de estilos, margens e rodapé de identificação do artefato gerado.
+- Atualização do `room-booking` para gerar Markdown, HTML e DOCX.
+- Inclusão de testes unitários para estrutura OOXML e tratamento de tabelas.
+- Atualização do GitHub Actions para executar testes e validar a geração do DOCX.
+- Preservação do Markdown versionado como fonte controlada e do gate de revisão humana.
+
 ## [0.7.0] — Portfolio Experience
 
 - Reorganização do README para avaliação rápida por recrutadores, lideranças e profissionais técnicos.

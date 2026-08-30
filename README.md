@@ -15,6 +15,7 @@ O **SAF** demonstra como uma demanda incompleta pode evoluir até uma especifica
 | Rastreabilidade | [`examples/room-booking/06-traceability.md`](examples/room-booking/06-traceability.md) |
 | IA com revisão humana | [`docs/02-ai-applied/`](docs/02-ai-applied/) |
 | Automação documental | [`automation/`](automation/) |
+| Exportação Markdown → DOCX | [`automation/docx_exporter.py`](automation/docx_exporter.py) |
 | Segurança de publicação | [`docs/00-governance/publication-safety.md`](docs/00-governance/publication-safety.md) |
 
 ## Como o SAF se conecta
@@ -26,7 +27,7 @@ flowchart LR
     D[IA aplicada] -. apoio com governança .-> B
     C --> E[Pipeline documental]
     E --> F[Validação]
-    F --> G[Artefatos derivados]
+    F --> G[Markdown / HTML / DOCX]
     H[Revisão humana] --> C
     H --> F
 ```
@@ -47,15 +48,17 @@ Requer Python 3 e não utiliza dependências externas.
 python automation/saf_pipeline.py examples/room-booking
 ```
 
+A execução gera os artefatos configurados pelo case. Na v0.8.0, o exemplo público produz Markdown, HTML e DOCX.
+
 ## Princípio central
 
 O MER diferencia fato, evidência, inferência, hipótese, gap, decisão e requisito. IA pode apoiar a análise, mas não substitui fontes, decisões ou revisão humana. A automação valida e deriva artefatos sem alterar silenciosamente o conteúdo funcional.
 
 ## Current version
 
-**v0.7.0 — Portfolio Experience**
+**v0.8.0 — Document Export**
 
-Esta versão prioriza a experiência de quem avalia o repositório: leitura rápida, arquitetura visual, execução verificável e clareza conceitual.
+Esta versão adiciona uma implementação pública e clean-room de exportação Markdown → DOCX, testes automatizados e validação em CI, mantendo Markdown como fonte controlada.
 
 ## Segurança de publicação
 
