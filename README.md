@@ -1,74 +1,66 @@
 # SAF — System Analysis Framework
 
-> Engenharia de Requisitos, Análise de Sistemas, IA responsável e automação documental em um framework público, rastreável e executável.
+> Um framework público para Engenharia de Requisitos e Análise de Sistemas: da demanda incompleta à especificação rastreável, com IA governada e automação documental.
 
-## Em 60 segundos
+## SAF 1.0
 
-O **SAF** demonstra como uma demanda incompleta pode evoluir até uma especificação funcional revisável sem transformar suposições em requisitos. O **MER — Método de Engenharia de Requisitos** é seu núcleo metodológico.
+A versão 1.0 consolida o **MER — Método de Engenharia de Requisitos** como núcleo do SAF e valida sua reutilização em três domínios fictícios.
 
-### O que este projeto demonstra
+**Resultado principal:** [`docs/04-framework/final-result.md`](docs/04-framework/final-result.md)
 
-| Capacidade | Evidência |
+### Três provas de reutilização
+
+| Case | Foco |
 |---|---|
-| Engenharia de Requisitos | [`docs/01-mer/`](docs/01-mer/) |
-| Regras temporais e conflitos | [`examples/room-booking/`](examples/room-booking/) |
-| Workflow, SLA e responsabilidade | [`examples/service-request/`](examples/service-request/) |
-| Aprovação, alçadas e governança | [`examples/purchase-request/`](examples/purchase-request/) |
-| Rastreabilidade | [`examples/purchase-request/06-traceability.md`](examples/purchase-request/06-traceability.md) |
-| IA com revisão humana | [`docs/02-ai-applied/`](docs/02-ai-applied/) |
-| Automação documental | [`automation/`](automation/) |
-| Exportação Markdown → DOCX | [`automation/docx_exporter.py`](automation/docx_exporter.py) |
-| Segurança de publicação | [`docs/00-governance/publication-safety.md`](docs/00-governance/publication-safety.md) |
+| [`room-booking`](examples/room-booking/) | conflitos, disponibilidade e regras temporais |
+| [`service-request`](examples/service-request/) | workflow, estados, prioridade e SLA |
+| [`purchase-request`](examples/purchase-request/) | aprovação, alçadas e segregação de responsabilidade |
 
-## Como o SAF se conecta
+## Como funciona
 
 ```mermaid
 flowchart LR
     A[Demanda] --> B[MER]
     B --> C[Especificação rastreável]
-    D[IA aplicada] -. apoio com governança .-> B
+    D[IA] -. apoio governado .-> B
     C --> E[Pipeline documental]
-    E --> F[Validação]
-    F --> G[Markdown / HTML / DOCX]
-    H[Revisão humana] --> C
-    H --> F
+    E --> F[Markdown / HTML / DOCX]
+    G[Revisão humana] --> C
+    G --> E
 ```
 
-## Comece por aqui
+O MER diferencia evidência, inferência, hipótese, gap, decisão e requisito. Hipóteses não viram requisitos diretamente. IA não substitui fonte, decisão ou aprovação humana.
 
-1. [`MER`](docs/01-mer/README.md)
-2. [`Case room-booking`](examples/room-booking/README.md)
-3. [`Case service-request`](examples/service-request/README.md)
-4. [`Case purchase-request`](examples/purchase-request/README.md)
-5. [`Rastreabilidade do terceiro case`](examples/purchase-request/06-traceability.md)
-6. [`Governança de IA`](docs/02-ai-applied/README.md)
-7. [`Automação`](automation/README.md)
+## Explore
 
-### Quick start
+1. [`Resultado final dos três MER`](docs/04-framework/final-result.md)
+2. [`MER`](docs/01-mer/README.md)
+3. [`IA aplicada`](docs/02-ai-applied/README.md)
+4. [`Automação`](automation/README.md)
+5. [`Governança de publicação`](docs/00-governance/publication-safety.md)
+
+## Execute
 
 Requer Python 3 e não utiliza dependências externas.
 
 ```bash
+python -m unittest discover -s tests -v
 python automation/saf_pipeline.py examples/room-booking --build-dir build/room-booking
 python automation/saf_pipeline.py examples/service-request --build-dir build/service-request
 python automation/saf_pipeline.py examples/purchase-request --build-dir build/purchase-request
 ```
 
-Os três cases utilizam o mesmo pipeline e podem gerar Markdown, HTML e DOCX.
+## Fonte e entrega
 
-## Princípio central
+Markdown versionado é a fonte controlada. HTML e DOCX são artefatos derivados e regeneráveis.
 
-O MER diferencia fato, evidência, inferência, hipótese, gap, decisão e requisito. IA pode apoiar a análise, mas não substitui fontes, decisões ou revisão humana. A automação valida e deriva artefatos sem alterar silenciosamente o conteúdo funcional.
+## Versão
 
-## Current version
-
-**v0.10.0 — Third Case Study**
-
-Esta versão adiciona uma terceira prova de reutilização do MER e do pipeline, agora orientada a aprovação, alçadas, segregação de responsabilidades e trilha de decisão.
+**v1.0.0 — Stable Public Framework**
 
 ## Segurança de publicação
 
-O SAF não representa o processo interno de nenhuma empresa. Seus exemplos são independentes e fictícios. Veja [`publication-safety.md`](docs/00-governance/publication-safety.md).
+O SAF não representa o processo interno de nenhuma empresa. Seus exemplos são independentes, fictícios e clean-room.
 
 ## Roadmap e histórico
 

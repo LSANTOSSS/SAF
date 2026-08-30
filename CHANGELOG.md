@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.0] — Stable Public Framework
+
+- Consolidação do SAF como primeira versão pública estável.
+- Inclusão de resultado final único para a validação dos três MER demonstrativos.
+- Comparação transversal entre Room Booking, Service Request e Purchase Request.
+- Formalização das capacidades estáveis e invariantes do framework.
+- Hardening do pipeline para `pipeline.json` inválido ou estruturalmente incompatível.
+- Bloqueio de fontes absolutas, parent traversal e caminhos fora do diretório do case.
+- Inclusão de testes para configuração e fronteira de caminhos.
+- Inclusão de `.gitignore` para artefatos derivados locais.
+- Correção da alçada do terceiro case para explicitar N2 + N3 acima de R$ 20.000.
+- Reposicionamento da experiência principal do portfólio para um único resultado consolidado.
+
 ## [0.10.0] — Third Case Study
 
 - Inclusão do terceiro case demonstrativo do SAF: `purchase-request`.

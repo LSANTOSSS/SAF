@@ -1,57 +1,37 @@
 # Roadmap — SAF
 
-O SAF será desenvolvido de forma incremental. Cada etapa deve acrescentar uma capacidade observável ao portfólio, evitando criar arquivos vazios apenas para preencher estrutura.
+## v1.0.0 — Stable Public Framework
 
-## Fase 0 — Fundação
 **Status:** concluída.
 
-## Fase 1 — MER
-**Status:** concluída na v0.2.0 — MER Core.
+A linha 0.x construiu e validou incrementalmente:
 
-## Fase 2 — Templates e checklists
-**Status:** concluída na v0.3.1 — Templates & Checklists Completion.
+- fundação e governança;
+- MER;
+- templates e checklists;
+- IA aplicada;
+- pipeline documental;
+- implementação executável;
+- exportação DOCX;
+- experiência de portfólio;
+- três cases clean-room.
 
-## Fase 3 — Case demonstrativo
-**Status:** concluída na v0.3.0 — First Case Study.  
-**Entrega:** [`examples/room-booking/`](examples/room-booking/).
+A v1.0 consolida essas capacidades em uma primeira versão pública estável.
 
-## Fase 4 — IA aplicada à Análise de Sistemas
-**Status:** concluída na v0.4.0 — AI Applied to Systems Analysis.
+### Critérios de estabilidade
 
-## Fase 5 — Automação
-**Status:** concluída na v0.6.0 — Automation Reference Implementation.
+- [x] método documentado;
+- [x] três aplicações independentes;
+- [x] rastreabilidade;
+- [x] IA subordinada a fontes e revisão humana;
+- [x] pipeline executável;
+- [x] Markdown, HTML e DOCX;
+- [x] CI;
+- [x] tratamento controlado de configuração inválida;
+- [x] fronteira de caminhos do case;
+- [x] testes de hardening;
+- [x] resultado final consolidado dos três MER.
 
-## Fase 6 — Portfolio Experience
-**Status:** concluída na v0.7.0 — Portfolio Experience.
+## Pós-1.0
 
-## Fase 7 — Document Export
-**Status:** concluída na v0.8.0 — Document Export.
-
-- [x] DOCX como formato derivado configurável
-- [x] Exporter clean-room escrito do zero
-- [x] Python standard library + Open XML
-- [x] Testes e GitHub Actions
-- [x] Markdown preservado como fonte controlada
-
-## Fase 8 — Reuse Validation
-**Status:** concluída na v0.9.0 — Second Case Study.
-
-- [x] Segundo domínio totalmente fictício e clean-room
-- [x] Workflow, estados, prioridade e SLA
-- [x] Mesmo pipeline para dois cases
-- [x] CI validando ambos os cases
-
-## Fase 9 — Third Case Study
-**Objetivo:** ampliar a prova de reutilização com um domínio de aprovação e governança.  
-**Status:** concluída na v0.10.0 — Third Case Study.
-
-- [x] Terceiro domínio totalmente fictício e clean-room
-- [x] Alçadas por valor
-- [x] Múltiplos níveis de aprovação
-- [x] Segregação de responsabilidade
-- [x] Devolução, rejeição, expiração e cancelamento
-- [x] Rastreabilidade completa
-- [x] Mesmo pipeline para os três cases
-- [x] CI validando os três cases e seus DOCX
-
-**Próxima direção candidata:** revisão transversal e consolidação do SAF para v1.0.0.
+Evoluções futuras devem preservar compatibilidade conceitual com a v1.0 ou documentar explicitamente qualquer mudança de contrato.

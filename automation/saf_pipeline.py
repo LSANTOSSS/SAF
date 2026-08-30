@@ -1,11 +1,34 @@
 #!/usr/bin/env python3
 from pathlib import Path
+from typing import Optional, Tuple
 import argparse
 import json
 import sys
 
 from exporters import compose_markdown, export_all
 from validators import validate_sources, validate_references
+
+
+def load_config(config_path: Path) -> Tuple[Optional[dict], Optional[str]]:
+    try:
+        raw = config_path.read_text(encoding="utf-8")
+        config = json.loads(raw)
+    except OSError as exc:
+        return None, f"Could not read pipeline.json: {exc}"
+    except json.JSONDecodeError as exc:
+        return None, f"Invalid pipeline.json: {exc.msg} at line {exc.lineno}, column {exc.colno}."
+
+    if not isinstance(config, dict):
+        return None, "Invalid pipeline.json: root value must be an object."
+
+    sources = config.get("sources")
+    outputs = config.get("outputs", ["markdown"])
+    if not isinstance(sources, list) or not all(isinstance(item, str) and item.strip() for item in sources):
+        return None, "Invalid pipeline.json: sources must be a string array."
+    if not isinstance(outputs, list) or not all(isinstance(item, str) and item.strip() for item in outputs):
+        return None, "Invalid pipeline.json: outputs must be a string array."
+
+    return config, None
 
 
 def main() -> int:
@@ -20,7 +43,11 @@ def main() -> int:
         print("ERROR: pipeline.json not found.")
         return 2
 
-    config = json.loads(config_path.read_text(encoding="utf-8"))
+    config, config_error = load_config(config_path)
+    if config_error:
+        print(f"ERROR: {config_error}")
+        return 2
+
     sources = config.get("sources", [])
     title = config.get("title", config.get("name", case_dir.name))
     slug = config.get("name", case_dir.name)
