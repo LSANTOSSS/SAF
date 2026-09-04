@@ -1,22 +1,22 @@
 # SAF — System Analysis Framework
 
-> Um framework público para Engenharia de Requisitos e Análise de Sistemas: da demanda incompleta à especificação rastreável, com IA governada e automação documental.
+**Framework público para Engenharia de Requisitos e Análise de Sistemas, da demanda incompleta à especificação rastreável.**
 
-## SAF 1.0
+[![CI](https://github.com/LSANTOSSS/SAF/actions/workflows/saf-pipeline.yml/badge.svg)](https://github.com/LSANTOSSS/SAF/actions/workflows/saf-pipeline.yml)
+[![Version](https://img.shields.io/badge/version-v1.0.0-informational)](https://github.com/LSANTOSSS/SAF)
+[![License: MIT](https://img.shields.io/badge/License-MIT-informational)](LICENSE)
 
-A versão 1.0 consolida o **MER — Método de Engenharia de Requisitos** como núcleo do SAF e valida sua reutilização em três domínios fictícios.
+O **SAF** demonstra um fluxo estruturado de análise em que evidências, hipóteses, gaps, decisões e requisitos são tratados de forma distinta, com **IA como apoio governado** e revisão humana obrigatória.
 
-**Resultado principal:** [`docs/04-framework/final-result.md`](docs/04-framework/final-result.md)
+A versão 1.0 consolida o **MER — Método de Engenharia de Requisitos** como núcleo do framework e valida sua reutilização em três domínios fictícios e independentes.
 
-### Três provas de reutilização
+> **Versão estável:** v1.0.0 — Stable Public Framework
 
-| Case | Foco |
-|---|---|
-| [`room-booking`](examples/room-booking/) | conflitos, disponibilidade e regras temporais |
-| [`service-request`](examples/service-request/) | workflow, estados, prioridade e SLA |
-| [`purchase-request`](examples/purchase-request/) | aprovação, alçadas e segregação de responsabilidade |
+## O problema
 
-## Como funciona
+Demandas de software raramente chegam completas. Informações faltantes, decisões implícitas, regras contraditórias e pressupostos não validados podem virar requisitos frágeis quando não existe um processo explícito de análise.
+
+O SAF organiza essa transição:
 
 ```mermaid
 flowchart LR
@@ -29,7 +29,30 @@ flowchart LR
     G --> E
 ```
 
-O MER diferencia evidência, inferência, hipótese, gap, decisão e requisito. Hipóteses não viram requisitos diretamente. IA não substitui fonte, decisão ou aprovação humana.
+O MER diferencia **evidência, inferência, hipótese, gap, decisão e requisito**. Hipóteses não viram requisitos diretamente, e IA não substitui fonte, decisão ou aprovação humana.
+
+## Três provas de reutilização
+
+| Case | Foco |
+| --- | --- |
+| [`room-booking`](examples/room-booking/) | conflitos, disponibilidade e regras temporais |
+| [`service-request`](examples/service-request/) | workflow, estados, prioridade e SLA |
+| [`purchase-request`](examples/purchase-request/) | aprovação, alçadas e segregação de responsabilidade |
+
+O consolidado dos três experimentos está em [`docs/04-framework/final-result.md`](docs/04-framework/final-result.md).
+
+## O que este projeto demonstra
+
+- Engenharia de Requisitos;
+- Análise de Sistemas;
+- rastreabilidade entre descoberta, decisão e requisito;
+- identificação e tratamento explícito de gaps;
+- governança de uso de IA;
+- modelagem de workflows e regras de negócio;
+- documentação versionada em Markdown;
+- automação documental;
+- testes e pipeline com GitHub Actions;
+- publicação clean-room de cases fictícios.
 
 ## Explore
 
@@ -50,17 +73,24 @@ python automation/saf_pipeline.py examples/service-request --build-dir build/ser
 python automation/saf_pipeline.py examples/purchase-request --build-dir build/purchase-request
 ```
 
-## Fonte e entrega
-
 Markdown versionado é a fonte controlada. HTML e DOCX são artefatos derivados e regeneráveis.
 
-## Versão
+## SAF + DocFlow
 
-**v1.0.0 — Stable Public Framework**
+O SAF e o [DocFlow](https://github.com/LSANTOSSS/docflow) formam duas peças complementares do portfólio:
+
+| Projeto | Demonstra |
+| --- | --- |
+| **SAF** | análise, Engenharia de Requisitos, rastreabilidade, governança e método |
+| **DocFlow** | Python, CLI, parsing, validação, automação documental, testes e CI/CD |
+
+O SAF mostra **como estruturar o problema e chegar a uma especificação defensável**. O DocFlow mostra **como transformar conteúdo estruturado em entregáveis automatizados e multi-formato**.
+
+Os dois projetos são independentes, públicos e clean-room.
 
 ## Segurança de publicação
 
-O SAF não representa o processo interno de nenhuma empresa. Seus exemplos são independentes, fictícios e clean-room.
+O SAF não representa o processo interno de nenhuma empresa. Seus exemplos são independentes, fictícios e desenvolvidos exclusivamente para demonstração pública.
 
 ## Roadmap e histórico
 
